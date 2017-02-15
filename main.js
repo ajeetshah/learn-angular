@@ -33,8 +33,19 @@ myApp.factory('Avengers', function() {
 		{
 			name: "Clark Gregg",
 			character: "Agent Phil Coulson"
+		},	
+		{
+			name: "Alexis Denisof",
+			character: "The Other"
+		},	
+		{
+			name: "Tina Benko",
+			character: "NASA Scientist"
+		},	
+		{
+			name: "Tom Hidleston",
+			character: "Loki"
 		}
-
 
 
 	];

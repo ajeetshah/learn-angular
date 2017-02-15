@@ -33,9 +33,9 @@
 		<input type="text" ng-model="search.$"/>
 		<br><br>
 		<table border="1" style="width: 50%">
-			<tr ng-repeat="actor in avengers.cast | filter:search">
-				<td>{{actor.name}}</td>
-				<td>{{actor.character}}</td>
+			<tr ng-repeat="actor in avengers.cast | filter:search | orderBy:'-name' | limitTo:-5">
+				<td>{{actor.name|lowercase}}</td>
+				<td>{{actor.character|uppercase}}</td>
 			</tr>
 		</table>
 	</div>
