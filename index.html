@@ -29,6 +29,17 @@
 		<h3>{{data.message|reverse}}</h3>
 	</div>
 
+	<div ng-controller="AvengersCtrl">
+		<input type="text" ng-model="search.$"/>
+		<br><br>
+		<table border="1" style="width: 50%">
+			<tr ng-repeat="actor in avengers.cast | filter:search">
+				<td>{{actor.name}}</td>
+				<td>{{actor.character}}</td>
+			</tr>
+		</table>
+	</div>
+
 </div>
 	
 </body>
