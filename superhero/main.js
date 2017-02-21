@@ -17,4 +17,3 @@ app.directive('flash', function() {
 		}
 	};
 });
-
